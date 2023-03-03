@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a5153c49-d8d2-4b3a-8a68-35aad68666cf}">
+		<property name="assetPath">
+			<value>Ambience2WaveHunters.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12.617142857142857</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e151fcd9-8c7b-4d6a-a018-f900050f795f}</destination>
+		</relationship>
+	</object>
+</objects>
