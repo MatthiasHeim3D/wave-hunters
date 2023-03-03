@@ -6,9 +6,11 @@ using UnityEngine;
 
 public class SearchableItem : MonoBehaviour
 {
+    public Vector2 audioRange = new Vector2(0f, 10f);
     StudioEventEmitter emitter;
 
     bool playerMovedThisFrame = false;
+    Vector3 lastPos;
 
     private void Start()
     {
@@ -23,9 +25,13 @@ public class SearchableItem : MonoBehaviour
 
     private void OnPlayerMoved(Vector3 playerPos)
     {
-        float distance = Vector3.Distance(playerPos, transform.position);
-        emitter.SetParameter("Distance", distance);
+        float lastDist = Vector3.Distance(playerPos, transform.position);
+        float distNormalized = lastDist.Remap(audioRange.x, audioRange.y, 0f, 1f);
+        emitter.SetParameter("Distance", distNormalized);
 
+        Debug.Log($"lastpos: {lastDist}");
+
+        lastPos = playerPos;
         playerMovedThisFrame = true;
     }
 
@@ -37,5 +43,8 @@ public class SearchableItem : MonoBehaviour
         {
             Gizmos.color = Color.green;
         }
+
+        Gizmos.DrawLine(transform.position, lastPos);
     }
 }
+
