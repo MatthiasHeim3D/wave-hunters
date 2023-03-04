@@ -24,18 +24,20 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: GridBlue_01_Mat
-  m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d3a4292faba6fde4e841c5ec93ee54e1,
+    type: 3}
   m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
+  m_InvalidKeywords:
   - _EMISSIVE_COLOR_MAP
   - _NORMALMAP
   - _NORMALMAP_TANGENT_SPACE
-  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2225
-  stringTagMap: {}
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -70,6 +72,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CoatMaskMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color:
+        m_Texture: {fileID: 2800000, guid: d9c0dd5cdac07b145be73329e489869a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color_Texture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -119,6 +129,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Metallic_Smoothness:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: c5c221ed57a3bf6488f8eba0db28a004, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -201,6 +219,7 @@ Material:
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _CoatMask: 0
+    - _ConservativeDepthOffsetEnable: 0
     - _Cull: 2
     - _CullMode: 2
     - _CullModeForward: 2
@@ -261,12 +280,15 @@ Material:
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
     - _Parallax: 0.02
+    - _QueueControl: 1
     - _QueueOffset: 0
     - _RayTracing: 0
     - _ReceiveShadows: 1
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
     - _Smoothness: 0.554
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
@@ -278,10 +300,12 @@ Material:
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
     - _StencilRefGBuffer: 10
     - _StencilRefMV: 40
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 14
     - _StencilWriteMaskMV: 40
     - _SubsurfaceMask: 1
@@ -305,6 +329,7 @@ Material:
     - _UVSec: 0
     - _UseEmissiveIntensity: 1
     - _UseShadowThreshold: 0
+    - _Use_Metallic_Smoothnes_Map: 0
     - _WorkflowMode: 1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
@@ -314,6 +339,7 @@ Material:
     - _BaseColor: {r: 0.27038085, g: 0.6601244, b: 0.8773585, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.27038082, g: 0.66012436, b: 0.8773585, a: 1}
+    - _Color_1: {r: 0, g: 0, b: 0, a: 0}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
