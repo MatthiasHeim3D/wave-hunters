@@ -8,7 +8,10 @@ using UnityEngine;
 public class SearchableItem : MonoBehaviour
 {
     public Vector2 audioRange = new Vector2(0f, 10f);
-    StudioEventEmitter emitter;
+    public float InteractDistance = 0.8f;
+    public StudioEventEmitter BuzzEmitter;
+
+    public EventReference CollectedEvent;
 
     bool playerMovedThisFrame = false;
     Vector3 lastPos;
@@ -16,25 +19,37 @@ public class SearchableItem : MonoBehaviour
 
     private void Start()
     {
-        emitter = GetComponent<StudioEventEmitter>();
-
         GameEvents.PlayerMoved += OnPlayerMoved;
+        GameEvents.PlayerCollectItem += OnPlayerCollectItem;
     }
+
     private void OnDestroy()
     {
         GameEvents.PlayerMoved -= OnPlayerMoved;
+        GameEvents.PlayerCollectItem -= OnPlayerCollectItem;
     }
 
     private void OnPlayerMoved(Vector3 playerPos)
     {
         lastDist = Vector3.Distance(playerPos, transform.position);
         float distNormalized = lastDist.Remap(audioRange.x, audioRange.y, 0f, 1f);
-        emitter.SetParameter("Distance", distNormalized);
+        BuzzEmitter.SetParameter("Distance", distNormalized);
 
         //Debug.Log($"lastpos: {lastDist}");
 
         lastPos = playerPos;
         playerMovedThisFrame = true;
+    }
+
+    private void OnPlayerCollectItem()
+    {
+        if (lastDist <= InteractDistance)
+        {
+            GameEvents.PlayerCollectedItem?.Invoke();
+            FMODUnity.RuntimeManager.PlayOneShot(CollectedEvent, transform.position);
+            BuzzEmitter.Stop();
+            Destroy(this.gameObject);
+        }
     }
 
     private void OnDrawGizmos()
