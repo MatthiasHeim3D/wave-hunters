@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8773343213229293770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interactables/Collected1
+  m_EditorClassIdentifier: 
+  Path: event:/Interactables/Collected1
+  Guid:
+    Data1: 1252537958
+    Data2: 1284718990
+    Data3: 83748028
+    Data4: 666747945
+  Banks:
+  - {fileID: -8415027246134642039}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4702
 --- !u!114 &-8459226649071435266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +69,10 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638135731639502193
+  lastModified: 638135740486210338
   FileSizes:
   - Name: Desktop
-    Value: 22283072
+    Value: 22343200
   Exists: 1
 --- !u!114 &-8038385354068658619
 MonoBehaviour:
@@ -626,12 +653,13 @@ MonoBehaviour:
   - {fileID: 8304053320614852118}
   - {fileID: 1147243038972945410}
   - {fileID: -6213562027526156642}
+  - {fileID: -8773343213229293770}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6698256605853138901}
   StringsBanks:
   - {fileID: 8198201800632681527}
-  cacheTime: 638135731639522236
+  cacheTime: 638135740486210338
   cacheVersion: 131601
 --- !u!114 &224559193623116383
 MonoBehaviour:
@@ -1572,10 +1600,10 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638135660050295946
+  lastModified: 638135740485500658
   FileSizes:
   - Name: Desktop
-    Value: 4140
+    Value: 4182
   Exists: 1
 --- !u!114 &8304053320614852118
 MonoBehaviour:

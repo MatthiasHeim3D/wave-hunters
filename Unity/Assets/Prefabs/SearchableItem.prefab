@@ -146,8 +146,8 @@ MonoBehaviour:
   BuzzEmitter: {fileID: 855156264775292727}
   CollectedEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1252537958
+      Data2: 1284718990
+      Data3: 83748028
+      Data4: 666747945
+    Path: event:/Interactables/Collected1
