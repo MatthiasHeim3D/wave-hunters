@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638135740486210338
+  lastModified: 638135754913830226
   FileSizes:
   - Name: Desktop
-    Value: 22343200
+    Value: 22343392
   Exists: 1
 --- !u!114 &-8038385354068658619
 MonoBehaviour:
@@ -143,7 +143,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Vehicles.bank
   Name: Vehicles
   StudioPath: bank:/Vehicles
-  lastModified: 638135731639522236
+  lastModified: 638135754914257419
   FileSizes:
   - Name: Desktop
     Value: 222432
@@ -239,7 +239,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638135660050285948
+  lastModified: 638135754909180708
   FileSizes:
   - Name: Desktop
     Value: 15592
@@ -314,7 +314,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638135731638782346
+  lastModified: 638135754910660516
   FileSizes:
   - Name: Desktop
     Value: 11280768
@@ -465,7 +465,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 638135731639512192
+  lastModified: 638135754914437934
   FileSizes:
   - Name: Desktop
     Value: 38624
@@ -485,7 +485,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Dialogue_CN.bank
   Name: Dialogue_CN
   StudioPath: bank:/Dialogue_CN
-  lastModified: 638135731638276405
+  lastModified: 638135754908750077
   FileSizes:
   - Name: Desktop
     Value: 52416
@@ -659,7 +659,7 @@ MonoBehaviour:
   - {fileID: -6698256605853138901}
   StringsBanks:
   - {fileID: 8198201800632681527}
-  cacheTime: 638135740486210338
+  cacheTime: 638135754914437934
   cacheVersion: 131601
 --- !u!114 &224559193623116383
 MonoBehaviour:
@@ -931,7 +931,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Dialogue_EN.bank
   Name: Dialogue_EN
   StudioPath: bank:/Dialogue_EN
-  lastModified: 638135731638276405
+  lastModified: 638135754908907248
   FileSizes:
   - Name: Desktop
     Value: 61120
@@ -1425,7 +1425,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Dialogue_JP.bank
   Name: Dialogue_JP
   StudioPath: bank:/Dialogue_JP
-  lastModified: 638135731638286393
+  lastModified: 638135754909057962
   FileSizes:
   - Name: Desktop
     Value: 66592
@@ -1600,7 +1600,7 @@ MonoBehaviour:
   Path: ../FMOD/Wave Hunters/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638135740485500658
+  lastModified: 638135754909211234
   FileSizes:
   - Name: Desktop
     Value: 4182
